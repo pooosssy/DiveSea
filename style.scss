@@ -302,21 +302,162 @@ nav {
     }
 }
 
+.weekly {
+    background-color: #F1F1F1;
+    padding: 70px 0 90px;
+
+    .weekly-title {
+        @include text($Poppins, 45px, #c5c5c5) {
+            font-weight: 600;
+            line-height: 59.812%;
+            text-align: center;
+        }
+    }
+
+    .slider-wrapper {
+        padding: 109.1px 0 114.72px 0;
+    }
+
+    .slider {
+        overflow: hidden;
 
 
+        .slider-line {
+            display: flex;
 
+            .slider-elem-wrapper {
+                margin-right: 39.84px;
+                background-color: #fff;
+                padding: 14.11px 14.11px 20.58px;
+                border-radius: 23.479px;
+                box-shadow: 38.817px 11.763px 58.813px 0px rgba(199, 199, 199, 0.60);
 
+                .slider-elem {
+                    position: relative;
 
+                    .time {
+                        display: inline-block;
+                        position: absolute;
+                        top: 13.23px;
+                        left: 128.15px;
+                        z-index: 2;
+                        padding: 9.41px 14.12px;
+                        border-radius: 9.41px;
+                        border: 1.176px solid rgba(28, 29, 32, 0.08);
+                        background: rgba(28, 29, 32, 0.35);
+                        box-shadow: 0px 4.705px 14.115px 0px rgba(28, 29, 32, 0.08);
+                        backdrop-filter: blur(2.352520704269409px);
 
+                        @include text($Poppins, 14.115px, #fff) {
+                            font-weight: 500;
+                            line-height: 150%;
+                            letter-spacing: 0.118px;
+                        }
+                    }
 
+                    >img {
+                        margin-bottom: 18.82px;
+                    }
 
+                    h5 {
+                        margin-bottom: 14.12px;
 
-.hero-elem__features {}
+                        @include text($Poppins, 21.173px, #141416) {
+                            font-weight: 600;
+                            line-height: 140%;
+                        }
+                    }
 
+                    .current-container {
+                        display: flex;
+                        justify-content: space-between;
+                        align-content: center;
 
+                        .current-text {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 4.71px;
 
+                            >p {
+                                @include text($Poppins, 14.115px, #94A3B8) {
+                                    font-weight: 400;
+                                    line-height: 150%;
+                                    letter-spacing: 0.118px;
+                                }
+                            }
 
+                            .number {
+                                display: flex;
+                                gap: 2.35px;
 
+                                .number-text {
+                                    @include text($Poppins, 16.468px, #141416) {
+                                        font-weight: 400;
+                                        line-height: 150%;
+                                    }
+                                }
+                            }
+                        }
+
+                        .current-btn {
+                            display: flex;
+                            align-items: center;
+
+                            @include btn(0px, #141416, 9.41px 18.82px) {
+                                border-radius: 11.763px;
+                            }
+
+                            @include text($Poppins, 14.115px, #fff) {
+                                font-weight: 700;
+                                line-height: 150%;
+                                letter-spacing: 0.118px;
+                            }
+
+                            &:hover {
+                                cursor: pointer;
+                                opacity: 0.93;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .navigation {
+        width: 122.8px;
+        height: 25.8px;
+        margin: 0 auto;
+        padding: 21.6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 17.2px;
+        box-shadow: 0 43.1px 34.5px -25.9px rgba(15, 15, 15, 0.12);
+        background-color: #fcfcfd;
+
+        .navigation__arrows {
+            display: flex;
+            gap: 34.5px;
+
+            .arrow-left {
+                transform: rotate(-180deg);
+                cursor: pointer;
+            }
+
+            .row {
+                width: 2.2px;
+                border-radius: 2.2px;
+                background-color: #e6e8ec;
+            }
+
+            .arrow-right {
+                cursor: pointer;
+            }
+        }
+    }
+
+}
 
 footer {
     background-color: #141416;
