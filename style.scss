@@ -305,6 +305,7 @@ nav {
 .weekly {
     background-color: #F1F1F1;
     padding: 70px 0 90px;
+    position: relative;
 
     .weekly-title {
         @include text($Poppins, 45px, #c5c5c5) {
@@ -457,6 +458,115 @@ nav {
         }
     }
 
+}
+
+.recently-viewed {
+    width: 365px;
+    flex-grow: 0;
+    padding: 26.4px 24px 21.1px;
+    border-radius: 16px;
+    box-shadow: 10px 10px 50px 0 rgba(20, 20, 22, 0.1);
+    border: solid 1px #edf2f7;
+    background-color: #fff;
+    position: absolute;
+    left: 976px;
+    top: 1642px;
+
+    .recently-viewed__header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 27.6px;
+
+        h3 {
+            @include text($Poppins, 21px, #1a202c) {
+                font-weight: 600;
+                line-height: 1.35;
+                letter-spacing: 0.2px;
+            }
+        }
+
+        img {
+            cursor: pointer;
+        }
+    }
+
+    .recently-viewed__items-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .recently-viewed__item {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+
+
+            img.recently-viewed__icon {
+                margin-right: 15.4px;
+            }
+
+            .recently-viewed__text {
+                align-self: center;
+
+                &>:first-child {
+                    @include text($Poppins, 15.4px, #141416) {
+                        font-weight: 500;
+                        line-height: 1.4;
+                    }
+                }
+
+                &>:last-child {
+                    @include text($Poppins, 12.5px, #64748b) {
+                        line-height: 1.5;
+                    }
+                }
+            }
+
+            .recently-viewed__numbers {
+                align-self: center;
+                text-align: right;
+
+                &>:first-child {
+                    display: flex;
+                    margin-bottom: 7.7px;
+
+                    @include text($Poppins, 15.4px, #141416) {
+                        font-weight: 600;
+                        line-height: 1.4;
+                    }
+                }
+
+                &>:last-child {
+                    @include text($Poppins, 13.4px, $increasePrise) {
+                        line-height: 1.5;
+                    }
+                }
+            }
+
+            .recently-viewed__numbers_red {
+                align-self: center;
+                text-align: right;
+
+                &>:first-child {
+                    display: flex;
+                    margin-bottom: 7.7px;
+
+                    @include text($Poppins, 15.4px, #141416) {
+                        font-weight: 600;
+                        line-height: 1.4;
+                    }
+                }
+
+                &>:last-child {
+                    @include text($Poppins, 13.4px, $decreasePrise) {
+                        line-height: 1.5;
+                    }
+                }
+
+
+            }
+
+        }
+    }
 }
 
 footer {
