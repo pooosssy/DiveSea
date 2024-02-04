@@ -16,6 +16,15 @@ a {
   text-decoration: none;
 }
 
+.title {
+  font-family: "Poppins", sans-serif;
+  font-size: 45.04px;
+  color: #141416;
+  line-height: 44.8px;
+  text-align: center;
+  font-weight: 600;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -539,6 +548,217 @@ nav .navs li:last-of-type {
   font-size: 13.4px;
   color: #E23333;
   line-height: 1.5;
+}
+
+.top-collection {
+  padding: 120.41px 95px 0 98px;
+  margin-bottom: 100px;
+}
+.top-collection .top-collection__container .top-collection__title {
+  margin-bottom: 90.59px;
+}
+.top-collection .top-collection__container .top-collection__collection-container .top-collection__subtitles {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  color: #93989A;
+  line-height: 130%;
+  letter-spacing: 1%;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 48px;
+}
+.top-collection .top-collection__container .top-collection__collection-container .top-collection__subtitles .other {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 92.52px;
+}
+.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 39.99px;
+}
+.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user {
+  padding-bottom: 26px;
+  border-bottom: 1.69px solid #EBE9E9;
+}
+.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user:last-of-type {
+  margin-bottom: 84.99px;
+}
+.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 304.3px;
+}
+.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .icon-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 23.65px;
+}
+.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .icon-name .name {
+  white-space: nowrap;
+}
+.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .icon-name .name p:first-of-type {
+  font-family: "Poppins", sans-serif;
+  font-size: 28.01px;
+  color: #141416;
+  line-height: 140%;
+  font-weight: 500;
+}
+.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .icon-name .name p:last-of-type {
+  font-family: "Poppins", sans-serif;
+  font-size: 22.76px;
+  color: #64748B;
+  line-height: 140%;
+  font-weight: 500;
+}
+.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other .profile__icon {
+  width: 1.97rem;
+  margin-right: 3.5px;
+}
+.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other .volume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 80.83px;
+}
+.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other .volume p {
+  font-family: "Poppins", sans-serif;
+  font-size: 24.51px;
+  color: #141416;
+  line-height: 140%;
+  font-weight: 600;
+}
+.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other .profit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-right: 63.33px;
+}
+.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other .profit p {
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-size: 24.51px;
+  color: #10C352;
+  line-height: 130%;
+  letter-spacing: 1%;
+  font-weight: 500;
+}
+.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other .floor-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 145.94px;
+}
+.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other .floor-price p {
+  font-family: "Poppins", sans-serif;
+  font-size: 24.51px;
+  color: #141416;
+  line-height: 140%;
+  font-weight: 600;
+}
+.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other .owners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 140.23px;
+}
+.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other .owners p {
+  font-family: "Poppins", sans-serif;
+  font-size: 23.65px;
+  color: #010101;
+  line-height: 130%;
+  letter-spacing: 1%;
+  font-weight: 500;
+}
+.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other .items p {
+  font-family: "Poppins", sans-serif;
+  font-size: 23.65px;
+  color: #010101;
+  line-height: 130%;
+  letter-spacing: 1%;
+  font-weight: 500;
+}
+.top-collection .top-collection__container .top-collection__collection-container .top-collection__explore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 17px;
+  cursor: pointer;
+}
+.top-collection .top-collection__container .top-collection__collection-container .top-collection__explore p {
+  font-family: "Poppins", sans-serif;
+  font-size: 17.67px;
+  color: #ACADB9;
+  line-height: 39.9%;
+  letter-spacing: -0.09px;
+  font-weight: 500;
 }
 
 footer {

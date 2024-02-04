@@ -58,6 +58,14 @@ a {
     text-decoration: none;
 }
 
+.title {
+    @include text($Poppins, 45.04px, #141416) {
+        line-height: 44.8px;
+        text-align: center;
+        font-weight: 600;
+    }
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -563,6 +571,192 @@ nav {
                 }
 
 
+            }
+
+        }
+    }
+}
+
+.top-collection {
+    padding: 120.41px 95px 0 98px;
+    margin-bottom: 100px;
+
+    .top-collection__container {
+
+        .top-collection__title {
+            margin-bottom: 90.59px;
+        }
+
+        .top-collection__collection-container {
+            .top-collection__subtitles {
+                @include text($Poppins, 22px, #93989A) {
+                    line-height: 130%;
+                    letter-spacing: 1%;
+                    font-weight: 500;
+                }
+
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 48px;
+
+                .other {
+                    display: flex;
+                    gap: 92.52px;
+                }
+            }
+
+            .top-collection__users-container {
+                display: flex;
+                flex-direction: column;
+                gap: 39.99px;
+
+                .top-collection__user {
+                    padding-bottom: 26px;
+                    border-bottom: 1.69px solid #EBE9E9;
+
+                    &:last-of-type {
+                        margin-bottom: 84.99px;
+                    }
+
+                    .profile {
+                        display: flex;
+                        gap: 304.3px;
+
+                        .icon-name {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 23.65px;
+
+                            .image {}
+
+                            .profile__image {}
+
+                            .name {
+                                white-space: nowrap;
+
+                                p:first-of-type {
+                                    @include text($Poppins, 28.01px, #141416) {
+                                        line-height: 140%;
+                                        font-weight: 500;
+                                    }
+                                }
+
+                                p:last-of-type {
+                                    @include text($Poppins, 22.76px, #64748B) {
+                                        line-height: 140%;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+                        }
+
+                        .profile-other {
+                            display: flex;
+
+                            .profile__icon {
+                                width: 1.97rem;
+                                margin-right: 3.5px;
+                            }
+
+                            .volume {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-right: 80.83px;
+
+                                p {
+                                    @include text($Poppins, 24.51px, #141416) {
+                                        line-height: 140%;
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+
+                            .profit {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                flex-wrap: nowrap;
+                                margin-right: 63.33px;
+
+                                p {
+                                    white-space: nowrap;
+
+                                    @include text($Poppins, 24.51px, $increasePrise) {
+                                        line-height: 130%;
+                                        letter-spacing: 1%;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+
+                            .floor-price {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-right: 145.94px;
+
+                                p {
+                                    @include text($Poppins, 24.51px, #141416) {
+                                        line-height: 140%;
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+
+                            .owners {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-right: 140.23px;
+
+                                p {
+                                    @include text($Poppins, 23.65px, #010101) {
+                                        line-height: 130%;
+                                        letter-spacing: 1%;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+
+                            .items {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                p {
+                                    @include text($Poppins, 23.65px, #010101) {
+                                        line-height: 130%;
+                                        letter-spacing: 1%;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+                        }
+
+
+
+                    }
+
+
+                }
+            }
+
+            .top-collection__explore {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 17px;
+                cursor: pointer;
+
+                p {
+                    @include text($Poppins, 17.67px, #ACADB9) {
+                        line-height: 39.9%;
+                        letter-spacing: -0.09px;
+                        font-weight: 500;
+                    }
+                }
             }
 
         }
