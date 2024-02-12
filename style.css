@@ -761,6 +761,210 @@ nav .navs li:last-of-type {
   font-weight: 500;
 }
 
+.explore .explore-container .explore-title {
+  margin-bottom: 65px;
+}
+.explore .explore-container .filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 22px;
+}
+.explore .explore-container .filters .filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  border: 2.2px solid #141416;
+  background-color: transparent;
+  padding: 0;
+  border-radius: 13.3px;
+}
+.explore .explore-container .filters .filter:hover {
+  opacity: 0.6;
+}
+.explore .explore-container .filters .filter img {
+  margin-right: 13.1px;
+}
+.explore .explore-container .filters .filter p {
+  font-family: "Manrope", sans-serif;
+  font-size: 15.47px;
+  color: #1A202C;
+  line-height: 150%;
+  letter-spacing: 0.22px;
+  font-weight: 600;
+}
+.explore .explore-container .filters .filters-all {
+  padding: 14.5px 24.5px;
+}
+.explore .explore-container .filters .filters-category {
+  padding: 0 16.1px;
+}
+.explore .explore-container .filters .filters-collection {
+  padding: 0 16.43px;
+}
+.explore .explore-container .filters .filters-price {
+  padding: 0 18px;
+}
+.explore .explore-container .filters-container {
+  margin-bottom: 100.28px;
+}
+.explore .explore-container .explore-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 40px auto 40px auto 40px auto;
+  grid-template-columns: repeat(4, auto);
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+  row-gap: 67.6px;
+  justify-items: center;
+  margin-bottom: 103.2px;
+}
+.explore .explore-container .explore-grid .grid-elem {
+  width: 254.4px;
+  height: 368.9px;
+  position: relative;
+  text-align: center;
+  border-radius: 23.6px;
+  background-color: #fff;
+  padding: 14.1px 13.5px 20.6px 14.1px;
+}
+.explore .explore-container .explore-grid .grid-elem:nth-child(-n+3), .explore .explore-container .explore-grid .grid-elem:nth-child(n+5) {
+  -webkit-box-shadow: 38.9px 11.8px 59px 0 rgba(199, 199, 199, 0.6);
+          box-shadow: 38.9px 11.8px 59px 0 rgba(199, 199, 199, 0.6);
+}
+.explore .explore-container .explore-grid .grid-elem:nth-child(4), .explore .explore-container .explore-grid .grid-elem:nth-child(6) {
+  -webkit-box-shadow: 17.8px 11.8px 59px 0 rgba(199, 199, 199, 0.6);
+          box-shadow: 17.8px 11.8px 59px 0 rgba(199, 199, 199, 0.6);
+}
+.explore .explore-container .explore-grid .grid-elem .time {
+  display: inline-block;
+  position: absolute;
+  top: 28.3px;
+  left: 141.6px;
+  z-index: 2;
+  padding: 9.41px 14.12px;
+  border-radius: 9.41px;
+  border: 1.176px solid rgba(28, 29, 32, 0.08);
+  background: rgba(28, 29, 32, 0.35);
+  -webkit-box-shadow: 0px 4.705px 14.115px 0px rgba(28, 29, 32, 0.08);
+          box-shadow: 0px 4.705px 14.115px 0px rgba(28, 29, 32, 0.08);
+  -webkit-backdrop-filter: blur(2.3525207043px);
+          backdrop-filter: blur(2.3525207043px);
+  font-family: "Poppins", sans-serif;
+  font-size: 14.2px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.118px;
+}
+.explore .explore-container .explore-grid .grid-elem > img {
+  margin-bottom: 18.82px;
+}
+.explore .explore-container .explore-grid .grid-elem h5 {
+  margin-bottom: 14.12px;
+  text-align: left;
+  margin-bottom: 14.16px;
+  font-family: "Poppins", sans-serif;
+  font-size: 21.173px;
+  color: #141416;
+  font-weight: 600;
+  line-height: 140%;
+}
+.explore .explore-container .explore-grid .grid-elem .current-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+.explore .explore-container .explore-grid .grid-elem .current-container .current-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4.71px;
+}
+.explore .explore-container .explore-grid .grid-elem .current-container .current-text > p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14.2px;
+  color: #94A3B8;
+  line-height: 150%;
+  letter-spacing: 0.118px;
+}
+.explore .explore-container .explore-grid .grid-elem .current-container .current-text .number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2.35px;
+}
+.explore .explore-container .explore-grid .grid-elem .current-container .current-text .number .number-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 16.468px;
+  color: #141416;
+  line-height: 150%;
+}
+.explore .explore-container .explore-grid .grid-elem .current-container .current-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 0px;
+  background-color: #141416;
+  padding: 9.41px 18.82px;
+  border-radius: 11.763px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14.115px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.118px;
+}
+.explore .explore-container .explore-grid .grid-elem .current-container .current-btn:hover {
+  cursor: pointer;
+  opacity: 0.93;
+}
+.explore .explore-container .explore__explore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 17px;
+  cursor: pointer;
+  margin-bottom: 102.3px;
+}
+.explore .explore-container .explore__explore p {
+  font-family: "Poppins", sans-serif;
+  font-size: 17.67px;
+  color: #ACADB9;
+  line-height: 39.9%;
+  letter-spacing: -0.09px;
+  font-weight: 500;
+}
+
 footer {
   background-color: #141416;
   padding: 92px 99px 81px 96px;

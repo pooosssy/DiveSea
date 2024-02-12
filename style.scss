@@ -40,6 +40,15 @@ $decreasePrise: #E23333;
     @content;
 }
 
+@mixin grid($marginRight, $marginBottom, $cols...) {
+    display: grid;
+    grid-template-columns: repeat($cols);
+    column-gap: $marginRight;
+    row-gap: $marginBottom;
+
+    @content;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -759,6 +768,201 @@ nav {
                 }
             }
 
+        }
+    }
+}
+
+.explore {
+    .explore-container {
+        .title {}
+
+        .explore-title {
+            margin-bottom: 65px;
+        }
+
+        .filters {
+            display: flex;
+            justify-content: center;
+            gap: 22px;
+
+            .filter {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 0.6;
+                }
+
+                @include btn(2.2px solid #141416, transparent, 0) {
+                    border-radius: 13.3px;
+                }
+
+                img {
+                    margin-right: 13.1px;
+                }
+
+                p {
+                    @include text($Manrope, 15.47px, #1A202C) {
+                        line-height: 150%;
+                        letter-spacing: 0.22px;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .filters-all {
+                padding: 14.5px 24.5px;
+
+            }
+
+            .filters-category {
+                padding: 0 16.1px;
+            }
+
+            .filters-collection {
+                padding: 0 16.43px;
+            }
+
+            .filters-price {
+                padding: 0 18px;
+            }
+        }
+
+        .filters-container {
+            margin-bottom: 100.28px;
+        }
+
+        .explore-grid {
+            @include grid(40px, 67.6px, 4, auto) {
+                justify-items: center;
+            }
+
+            margin-bottom: 103.2px;
+
+            .grid-elem {
+                width: 254.4px;
+                height: 368.9px;
+                position: relative;
+                text-align: center;
+                border-radius: 23.6px;
+                background-color: #fff;
+                padding: 14.1px 13.5px 20.6px 14.1px;
+
+
+                &:nth-child(-n + 3),
+                &:nth-child(n + 5) {
+                    box-shadow: 38.9px 11.8px 59px 0 rgba(199, 199, 199, 0.6);
+                }
+
+                &:nth-child(4),
+                &:nth-child(6) {
+                    box-shadow: 17.8px 11.8px 59px 0 rgba(199, 199, 199, 0.6);
+                }
+
+                .time {
+                    display: inline-block;
+                    position: absolute;
+                    top: 28.3px;
+                    left: 141.6px;
+                    z-index: 2;
+                    padding: 9.41px 14.12px;
+                    border-radius: 9.41px;
+                    border: 1.176px solid rgba(28, 29, 32, 0.08);
+                    background: rgba(28, 29, 32, 0.35);
+                    box-shadow: 0px 4.705px 14.115px 0px rgba(28, 29, 32, 0.08);
+                    backdrop-filter: blur(2.352520704269409px);
+
+                    @include text($Poppins, 14.2px, #fff) {
+                        font-weight: 500;
+                        line-height: 150%;
+                        letter-spacing: 0.118px;
+                    }
+                }
+
+                >img {
+                    margin-bottom: 18.82px;
+                }
+
+                h5 {
+                    margin-bottom: 14.12px;
+                    text-align: left;
+                    margin-bottom: 14.16px;
+
+                    @include text($Poppins, 21.173px, #141416) {
+                        font-weight: 600;
+                        line-height: 140%;
+                    }
+                }
+
+                .current-container {
+                    display: flex;
+                    justify-content: space-between;
+                    align-content: center;
+
+                    .current-text {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 4.71px;
+
+                        >p {
+                            @include text($Poppins, 14.2px, #94A3B8) {
+                                line-height: 150%;
+                                letter-spacing: 0.118px;
+                            }
+                        }
+
+                        .number {
+                            display: flex;
+                            gap: 2.35px;
+
+                            .number-text {
+                                @include text($Poppins, 16.468px, #141416) {
+                                    line-height: 150%;
+                                }
+                            }
+                        }
+                    }
+
+                    .current-btn {
+                        display: flex;
+                        align-items: center;
+
+                        @include btn(0px, #141416, 9.41px 18.82px) {
+                            border-radius: 11.763px;
+                        }
+
+                        @include text($Poppins, 14.115px, #fff) {
+                            font-weight: 700;
+                            line-height: 150%;
+                            letter-spacing: 0.118px;
+                        }
+
+                        &:hover {
+                            cursor: pointer;
+                            opacity: 0.93;
+                        }
+                    }
+                }
+            }
+        }
+
+        .explore__explore {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 17px;
+            cursor: pointer;
+            margin-bottom: 102.3px;
+
+            p {
+                @include text($Poppins, 17.67px, #ACADB9) {
+                    line-height: 39.9%;
+                    letter-spacing: -0.09px;
+                    font-weight: 500;
+                }
+            }
         }
     }
 }
