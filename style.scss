@@ -157,207 +157,716 @@ nav {
     }
 }
 
-.main {}
-
 .main-container {}
 
-.hero-elem {
-    display: flex;
+.main {
+    .hero-elem {
+        display: flex;
 
-    .hero-elem__text-container {
-        margin: 0 130.6px 0 98px;
+        .hero-elem__text-container {
+            margin: 0 130.6px 0 98px;
 
-        &::before {
-            content: '';
-            display: inline-block;
-            background-color: #cdcdcd;
-            width: 195px;
-            height: 1px;
-            margin-bottom: 10px;
-        }
-    }
-
-    .text-container {
-        .hero-elem__text {
-            margin-bottom: 2.81rem;
-
-            .hero-elem__title {
-                margin-bottom: 16px;
-
-                @include text($Poppins, 4.69rem, #141416) {
-                    font-weight: 600;
-                    line-height: 120%;
-                    letter-spacing: -3px;
-                }
-            }
-
-            .hero-elem__subtitle {
-                strong {
-                    color: #141416;
-                }
-
-                @include text($Inter, 1.125rem, #676767) {
-                    font-weight: 600;
-                    line-height: 156%;
-                }
+            &::before {
+                content: '';
+                display: inline-block;
+                background-color: #cdcdcd;
+                width: 195px;
+                height: 1px;
+                margin-bottom: 10px;
             }
         }
 
-        .hero-elem__btns {
-            margin-bottom: 82px;
+        .text-container {
+            .hero-elem__text {
+                margin-bottom: 2.81rem;
 
-            .hero-elem__btn_black {
-                margin-right: 23px;
+                .hero-elem__title {
+                    margin-bottom: 16px;
 
-                @include btn(0px, #000, 18px 30px) {
-                    border-radius: 12.412px;
-
-                    @include text($Poppins, 1.017rem, #fff) {
-                        letter-spacing: 0.163px;
-                        text-transform: uppercase;
-                        font-weight: 500;
-                    }
-                }
-
-                &:hover {
-                    cursor: pointer;
-                    opacity: 0.9;
-                }
-            }
-
-            .hero-elem__btn_white {
-
-                @include btn(1.5px solid #000, transparent, 18px 21px) {
-                    border-radius: 12.412px;
-
-                    @include text($Poppins, 1.017rem, #000) {
-                        letter-spacing: 0.163px;
-                        text-transform: uppercase;
-                        font-weight: 500;
-                    }
-                }
-
-                &:hover {
-                    cursor: pointer;
-                }
-            }
-        }
-
-        .features {
-            display: flex;
-
-            .features__textblock {
-                margin-right: 45.69px;
-
-                h1 {
-                    margin-bottom: 3.92px;
-
-                    @include text($PublicSans, 36.77px, #141416) {
+                    @include text($Poppins, 4.69rem, #141416) {
                         font-weight: 600;
-                        line-height: 125%;
+                        line-height: 120%;
+                        letter-spacing: -3px;
                     }
                 }
 
-                p {
-                    margin-bottom: 165.08px;
+                .hero-elem__subtitle {
+                    strong {
+                        color: #141416;
+                    }
 
-                    @include text($Inter, 12.257px, #848586) {
-                        font-weight: 500;
-                        line-height: 150%;
+                    @include text($Inter, 1.125rem, #676767) {
+                        font-weight: 600;
+                        line-height: 156%;
                     }
                 }
             }
 
+            .hero-elem__btns {
+                margin-bottom: 82px;
+
+                .hero-elem__btn_black {
+                    margin-right: 23px;
+
+                    @include btn(0px, #000, 18px 30px) {
+                        border-radius: 12.412px;
+
+                        @include text($Poppins, 1.017rem, #fff) {
+                            letter-spacing: 0.163px;
+                            text-transform: uppercase;
+                            font-weight: 500;
+                        }
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                        opacity: 0.9;
+                    }
+                }
+
+                .hero-elem__btn_white {
+
+                    @include btn(1.5px solid #000, transparent, 18px 21px) {
+                        border-radius: 12.412px;
+
+                        @include text($Poppins, 1.017rem, #000) {
+                            letter-spacing: 0.163px;
+                            text-transform: uppercase;
+                            font-weight: 500;
+                        }
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .features {
+                display: flex;
+
+                .features__textblock {
+                    margin-right: 45.69px;
+
+                    h1 {
+                        margin-bottom: 3.92px;
+
+                        @include text($PublicSans, 36.77px, #141416) {
+                            font-weight: 600;
+                            line-height: 125%;
+                        }
+                    }
+
+                    p {
+                        margin-bottom: 165.08px;
+
+                        @include text($Inter, 12.257px, #848586) {
+                            font-weight: 500;
+                            line-height: 150%;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .hero-elem__img-container {
+            position: relative;
+
+            .img-1 {
+                position: absolute;
+                top: 7px;
+                z-index: 2;
+            }
+
+            .img-1_blur {
+                position: absolute;
+                top: 30.91px;
+                border-radius: 11.957px;
+                background: lightgray 50% / cover no-repeat;
+                filter: blur(41.85015106201172px);
+            }
+
+            .img-2 {
+                position: absolute;
+                top: 188px;
+                left: 431px;
+                z-index: 2;
+            }
+
+            .img-2_blur {
+                position: absolute;
+                top: 212.74px;
+                left: 431px;
+                border-radius: 9.644px;
+                background: lightgray 50% / cover no-repeat;
+                filter: blur(33.75477600097656px);
+            }
+
+            .img-3 {
+                position: absolute;
+                top: 48px;
+                left: 411px;
+
+            }
+
+            .img-4 {
+                position: absolute;
+                top: -12px;
+                left: 607px;
+            }
         }
     }
 
-    .hero-elem__img-container {
+    .weekly {
+        background-color: #F1F1F1;
+        padding: 70px 0 90px;
         position: relative;
 
-        .img-1 {
-            position: absolute;
-            top: 7px;
-            z-index: 2;
+        .weekly-title {
+            @include text($Poppins, 45px, #c5c5c5) {
+                font-weight: 600;
+                line-height: 59.812%;
+                text-align: center;
+            }
         }
 
-        .img-1_blur {
-            position: absolute;
-            top: 30.91px;
-            border-radius: 11.957px;
-            background: lightgray 50% / cover no-repeat;
-            filter: blur(41.85015106201172px);
+        .slider-wrapper {
+            padding: 109.1px 0 114.72px 0;
         }
 
-        .img-2 {
-            position: absolute;
-            top: 188px;
-            left: 431px;
-            z-index: 2;
+        .slider {
+            overflow: hidden;
+
+
+            .slider-line {
+                display: flex;
+
+                .slider-elem-wrapper {
+                    margin-right: 39.84px;
+                    background-color: #fff;
+                    padding: 14.11px 14.11px 20.58px;
+                    border-radius: 23.479px;
+                    box-shadow: 38.817px 11.763px 58.813px 0px rgba(199, 199, 199, 0.60);
+
+                    .slider-elem {
+                        position: relative;
+
+                        .time {
+                            display: inline-block;
+                            position: absolute;
+                            top: 13.23px;
+                            left: 128.15px;
+                            z-index: 2;
+                            padding: 9.41px 14.12px;
+                            border-radius: 9.41px;
+                            border: 1.176px solid rgba(28, 29, 32, 0.08);
+                            background: rgba(28, 29, 32, 0.35);
+                            box-shadow: 0px 4.705px 14.115px 0px rgba(28, 29, 32, 0.08);
+                            backdrop-filter: blur(2.352520704269409px);
+
+                            @include text($Poppins, 14.115px, #fff) {
+                                font-weight: 500;
+                                line-height: 150%;
+                                letter-spacing: 0.118px;
+                            }
+                        }
+
+                        >img {
+                            margin-bottom: 18.82px;
+                        }
+
+                        h5 {
+                            margin-bottom: 14.12px;
+
+                            @include text($Poppins, 21.173px, #141416) {
+                                font-weight: 600;
+                                line-height: 140%;
+                            }
+                        }
+
+                        .current-container {
+                            display: flex;
+                            justify-content: space-between;
+                            align-content: center;
+
+                            .current-text {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 4.71px;
+
+                                >p {
+                                    @include text($Poppins, 14.115px, #94A3B8) {
+                                        font-weight: 400;
+                                        line-height: 150%;
+                                        letter-spacing: 0.118px;
+                                    }
+                                }
+
+                                .number {
+                                    display: flex;
+                                    gap: 2.35px;
+
+                                    .number-text {
+                                        @include text($Poppins, 16.468px, #141416) {
+                                            font-weight: 400;
+                                            line-height: 150%;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .current-btn {
+                                display: flex;
+                                align-items: center;
+
+                                @include btn(0px, #141416, 9.41px 18.82px) {
+                                    border-radius: 11.763px;
+                                }
+
+                                @include text($Poppins, 14.115px, #fff) {
+                                    font-weight: 700;
+                                    line-height: 150%;
+                                    letter-spacing: 0.118px;
+                                }
+
+                                &:hover {
+                                    cursor: pointer;
+                                    opacity: 0.93;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
 
-        .img-2_blur {
-            position: absolute;
-            top: 212.74px;
-            left: 431px;
-            border-radius: 9.644px;
-            background: lightgray 50% / cover no-repeat;
-            filter: blur(33.75477600097656px);
-        }
-
-        .img-3 {
-            position: absolute;
-            top: 48px;
-            left: 411px;
-
-        }
-
-        .img-4 {
-            position: absolute;
-            top: -12px;
-            left: 607px;
-        }
-    }
-}
-
-.weekly {
-    background-color: #F1F1F1;
-    padding: 70px 0 90px;
-    position: relative;
-
-    .weekly-title {
-        @include text($Poppins, 45px, #c5c5c5) {
-            font-weight: 600;
-            line-height: 59.812%;
-            text-align: center;
-        }
-    }
-
-    .slider-wrapper {
-        padding: 109.1px 0 114.72px 0;
-    }
-
-    .slider {
-        overflow: hidden;
-
-
-        .slider-line {
+        .navigation {
+            width: 122.8px;
+            height: 25.8px;
+            margin: 0 auto;
+            padding: 21.6px;
             display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 17.2px;
+            box-shadow: 0 43.1px 34.5px -25.9px rgba(15, 15, 15, 0.12);
+            background-color: #fcfcfd;
 
-            .slider-elem-wrapper {
-                margin-right: 39.84px;
-                background-color: #fff;
-                padding: 14.11px 14.11px 20.58px;
-                border-radius: 23.479px;
-                box-shadow: 38.817px 11.763px 58.813px 0px rgba(199, 199, 199, 0.60);
+            .navigation__arrows {
+                display: flex;
+                gap: 34.5px;
 
-                .slider-elem {
+                .arrow-left {
+                    transform: rotate(-180deg);
+                    cursor: pointer;
+                }
+
+                .row {
+                    width: 2.2px;
+                    border-radius: 2.2px;
+                    background-color: #e6e8ec;
+                }
+
+                .arrow-right {
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+
+    .recently-viewed {
+        width: 365px;
+        flex-grow: 0;
+        padding: 26.4px 24px 21.1px;
+        border-radius: 16px;
+        box-shadow: 10px 10px 50px 0 rgba(20, 20, 22, 0.1);
+        border: solid 1px #edf2f7;
+        background-color: #fff;
+        position: absolute;
+        left: 976px;
+        top: 1642px;
+
+        .recently-viewed__header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 27.6px;
+
+            h3 {
+                @include text($Poppins, 21px, #1a202c) {
+                    font-weight: 600;
+                    line-height: 1.35;
+                    letter-spacing: 0.2px;
+                }
+            }
+
+            img {
+                cursor: pointer;
+            }
+        }
+
+        .recently-viewed__items-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .recently-viewed__item {
+                display: grid;
+                grid-template-columns: auto 1fr auto;
+
+
+                img.recently-viewed__icon {
+                    margin-right: 15.4px;
+                }
+
+                .recently-viewed__text {
+                    align-self: center;
+
+                    &>:first-child {
+                        @include text($Poppins, 15.4px, #141416) {
+                            font-weight: 500;
+                            line-height: 1.4;
+                        }
+                    }
+
+                    &>:last-child {
+                        @include text($Poppins, 12.5px, #64748b) {
+                            line-height: 1.5;
+                        }
+                    }
+                }
+
+                .recently-viewed__numbers {
+                    align-self: center;
+                    text-align: right;
+
+                    &>:first-child {
+                        display: flex;
+                        margin-bottom: 7.7px;
+
+                        @include text($Poppins, 15.4px, #141416) {
+                            font-weight: 600;
+                            line-height: 1.4;
+                        }
+                    }
+
+                    &>:last-child {
+                        @include text($Poppins, 13.4px, $increasePrise) {
+                            line-height: 1.5;
+                        }
+                    }
+                }
+
+                .recently-viewed__numbers_red {
+                    align-self: center;
+                    text-align: right;
+
+                    &>:first-child {
+                        display: flex;
+                        margin-bottom: 7.7px;
+
+                        @include text($Poppins, 15.4px, #141416) {
+                            font-weight: 600;
+                            line-height: 1.4;
+                        }
+                    }
+
+                    &>:last-child {
+                        @include text($Poppins, 13.4px, $decreasePrise) {
+                            line-height: 1.5;
+                        }
+                    }
+
+
+                }
+
+            }
+        }
+    }
+
+    .top-collection {
+        padding: 120.41px 95px 0 98px;
+        margin-bottom: 100px;
+
+        .top-collection__container {
+
+            .top-collection__title {
+                margin-bottom: 90.59px;
+            }
+
+            .top-collection__collection-container {
+                .top-collection__subtitles {
+                    @include text($Poppins, 22px, #93989A) {
+                        line-height: 130%;
+                        letter-spacing: 1%;
+                        font-weight: 500;
+                    }
+
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 48px;
+
+                    .other {
+                        display: flex;
+                        gap: 92.52px;
+                    }
+                }
+
+                .top-collection__users-container {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 39.99px;
+
+                    .top-collection__user {
+                        padding-bottom: 26px;
+                        border-bottom: 1.69px solid #EBE9E9;
+
+                        &:last-of-type {
+                            margin-bottom: 84.99px;
+                        }
+
+                        .profile {
+                            display: flex;
+                            gap: 304.3px;
+
+                            .icon-name {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 23.65px;
+
+                                .image {}
+
+                                .profile__image {}
+
+                                .name {
+                                    white-space: nowrap;
+
+                                    p:first-of-type {
+                                        @include text($Poppins, 28.01px, #141416) {
+                                            line-height: 140%;
+                                            font-weight: 500;
+                                        }
+                                    }
+
+                                    p:last-of-type {
+                                        @include text($Poppins, 22.76px, #64748B) {
+                                            line-height: 140%;
+                                            font-weight: 500;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .profile-other {
+                                display: flex;
+
+                                .profile__icon {
+                                    width: 1.97rem;
+                                    margin-right: 3.5px;
+                                }
+
+                                .volume {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin-right: 80.83px;
+
+                                    p {
+                                        @include text($Poppins, 24.51px, #141416) {
+                                            line-height: 140%;
+                                            font-weight: 600;
+                                        }
+                                    }
+                                }
+
+                                .profit {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    flex-wrap: nowrap;
+                                    margin-right: 63.33px;
+
+                                    p {
+                                        white-space: nowrap;
+
+                                        @include text($Poppins, 24.51px, $increasePrise) {
+                                            line-height: 130%;
+                                            letter-spacing: 1%;
+                                            font-weight: 500;
+                                        }
+                                    }
+                                }
+
+                                .floor-price {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin-right: 145.94px;
+
+                                    p {
+                                        @include text($Poppins, 24.51px, #141416) {
+                                            line-height: 140%;
+                                            font-weight: 600;
+                                        }
+                                    }
+                                }
+
+                                .owners {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin-right: 140.23px;
+
+                                    p {
+                                        @include text($Poppins, 23.65px, #010101) {
+                                            line-height: 130%;
+                                            letter-spacing: 1%;
+                                            font-weight: 500;
+                                        }
+                                    }
+                                }
+
+                                .items {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+
+                                    p {
+                                        @include text($Poppins, 23.65px, #010101) {
+                                            line-height: 130%;
+                                            letter-spacing: 1%;
+                                            font-weight: 500;
+                                        }
+                                    }
+                                }
+                            }
+
+
+
+                        }
+
+
+                    }
+                }
+
+                .top-collection__explore {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    gap: 17px;
+                    cursor: pointer;
+
+                    p {
+                        @include text($Poppins, 17.67px, #ACADB9) {
+                            line-height: 39.9%;
+                            letter-spacing: -0.09px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .explore {
+        .explore-container {
+            padding: 0 96px;
+
+            .title {}
+
+            .explore-title {
+                margin-bottom: 65px;
+            }
+
+            .filters {
+                display: flex;
+                justify-content: center;
+                gap: 22px;
+
+                .filter {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+
+                    &:hover {
+                        opacity: 0.6;
+                    }
+
+                    @include btn(2.2px solid #141416, transparent, 0) {
+                        border-radius: 13.3px;
+                    }
+
+                    img {
+                        margin-right: 13.1px;
+                    }
+
+                    p {
+                        @include text($Manrope, 15.47px, #1A202C) {
+                            line-height: 150%;
+                            letter-spacing: 0.22px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+
+                .filters-all {
+                    padding: 14.5px 24.5px;
+
+                }
+
+                .filters-category {
+                    padding: 0 16.1px;
+                }
+
+                .filters-collection {
+                    padding: 0 16.43px;
+                }
+
+                .filters-price {
+                    padding: 0 18px;
+                }
+            }
+
+            .filters-container {
+                margin-bottom: 100.28px;
+            }
+
+            .explore-grid {
+                @include grid(40px, 67.6px, 4, auto) {
+                    justify-items: center;
+                }
+
+                margin-bottom: 103.2px;
+
+                .grid-elem {
+                    width: 254.4px;
+                    height: 368.9px;
                     position: relative;
+                    text-align: center;
+                    border-radius: 23.6px;
+                    background-color: #fff;
+                    padding: 14.1px 13.5px 20.6px 14.1px;
+
+
+                    &:nth-child(-n + 3),
+                    &:nth-child(n + 5) {
+                        box-shadow: 38.9px 11.8px 59px 0 rgba(199, 199, 199, 0.6);
+                    }
+
+                    &:nth-child(4),
+                    &:nth-child(6) {
+                        box-shadow: 17.8px 11.8px 59px 0 rgba(199, 199, 199, 0.6);
+                    }
 
                     .time {
                         display: inline-block;
                         position: absolute;
-                        top: 13.23px;
-                        left: 128.15px;
+                        top: 28.3px;
+                        left: 141.6px;
                         z-index: 2;
                         padding: 9.41px 14.12px;
                         border-radius: 9.41px;
@@ -366,7 +875,7 @@ nav {
                         box-shadow: 0px 4.705px 14.115px 0px rgba(28, 29, 32, 0.08);
                         backdrop-filter: blur(2.352520704269409px);
 
-                        @include text($Poppins, 14.115px, #fff) {
+                        @include text($Poppins, 14.2px, #fff) {
                             font-weight: 500;
                             line-height: 150%;
                             letter-spacing: 0.118px;
@@ -379,6 +888,8 @@ nav {
 
                     h5 {
                         margin-bottom: 14.12px;
+                        text-align: left;
+                        margin-bottom: 14.16px;
 
                         @include text($Poppins, 21.173px, #141416) {
                             font-weight: 600;
@@ -397,8 +908,7 @@ nav {
                             gap: 4.71px;
 
                             >p {
-                                @include text($Poppins, 14.115px, #94A3B8) {
-                                    font-weight: 400;
+                                @include text($Poppins, 14.2px, #94A3B8) {
                                     line-height: 150%;
                                     letter-spacing: 0.118px;
                                 }
@@ -410,7 +920,6 @@ nav {
 
                                 .number-text {
                                     @include text($Poppins, 16.468px, #141416) {
-                                        font-weight: 400;
                                         line-height: 150%;
                                     }
                                 }
@@ -439,325 +948,14 @@ nav {
                     }
                 }
             }
-        }
-    }
 
-    .navigation {
-        width: 122.8px;
-        height: 25.8px;
-        margin: 0 auto;
-        padding: 21.6px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 17.2px;
-        box-shadow: 0 43.1px 34.5px -25.9px rgba(15, 15, 15, 0.12);
-        background-color: #fcfcfd;
-
-        .navigation__arrows {
-            display: flex;
-            gap: 34.5px;
-
-            .arrow-left {
-                transform: rotate(-180deg);
-                cursor: pointer;
-            }
-
-            .row {
-                width: 2.2px;
-                border-radius: 2.2px;
-                background-color: #e6e8ec;
-            }
-
-            .arrow-right {
-                cursor: pointer;
-            }
-        }
-    }
-
-}
-
-.recently-viewed {
-    width: 365px;
-    flex-grow: 0;
-    padding: 26.4px 24px 21.1px;
-    border-radius: 16px;
-    box-shadow: 10px 10px 50px 0 rgba(20, 20, 22, 0.1);
-    border: solid 1px #edf2f7;
-    background-color: #fff;
-    position: absolute;
-    left: 976px;
-    top: 1642px;
-
-    .recently-viewed__header {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 27.6px;
-
-        h3 {
-            @include text($Poppins, 21px, #1a202c) {
-                font-weight: 600;
-                line-height: 1.35;
-                letter-spacing: 0.2px;
-            }
-        }
-
-        img {
-            cursor: pointer;
-        }
-    }
-
-    .recently-viewed__items-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-
-        .recently-viewed__item {
-            display: grid;
-            grid-template-columns: auto 1fr auto;
-
-
-            img.recently-viewed__icon {
-                margin-right: 15.4px;
-            }
-
-            .recently-viewed__text {
-                align-self: center;
-
-                &>:first-child {
-                    @include text($Poppins, 15.4px, #141416) {
-                        font-weight: 500;
-                        line-height: 1.4;
-                    }
-                }
-
-                &>:last-child {
-                    @include text($Poppins, 12.5px, #64748b) {
-                        line-height: 1.5;
-                    }
-                }
-            }
-
-            .recently-viewed__numbers {
-                align-self: center;
-                text-align: right;
-
-                &>:first-child {
-                    display: flex;
-                    margin-bottom: 7.7px;
-
-                    @include text($Poppins, 15.4px, #141416) {
-                        font-weight: 600;
-                        line-height: 1.4;
-                    }
-                }
-
-                &>:last-child {
-                    @include text($Poppins, 13.4px, $increasePrise) {
-                        line-height: 1.5;
-                    }
-                }
-            }
-
-            .recently-viewed__numbers_red {
-                align-self: center;
-                text-align: right;
-
-                &>:first-child {
-                    display: flex;
-                    margin-bottom: 7.7px;
-
-                    @include text($Poppins, 15.4px, #141416) {
-                        font-weight: 600;
-                        line-height: 1.4;
-                    }
-                }
-
-                &>:last-child {
-                    @include text($Poppins, 13.4px, $decreasePrise) {
-                        line-height: 1.5;
-                    }
-                }
-
-
-            }
-
-        }
-    }
-}
-
-.top-collection {
-    padding: 120.41px 95px 0 98px;
-    margin-bottom: 100px;
-
-    .top-collection__container {
-
-        .top-collection__title {
-            margin-bottom: 90.59px;
-        }
-
-        .top-collection__collection-container {
-            .top-collection__subtitles {
-                @include text($Poppins, 22px, #93989A) {
-                    line-height: 130%;
-                    letter-spacing: 1%;
-                    font-weight: 500;
-                }
-
-                display: flex;
-                justify-content: space-between;
-                margin-bottom: 48px;
-
-                .other {
-                    display: flex;
-                    gap: 92.52px;
-                }
-            }
-
-            .top-collection__users-container {
-                display: flex;
-                flex-direction: column;
-                gap: 39.99px;
-
-                .top-collection__user {
-                    padding-bottom: 26px;
-                    border-bottom: 1.69px solid #EBE9E9;
-
-                    &:last-of-type {
-                        margin-bottom: 84.99px;
-                    }
-
-                    .profile {
-                        display: flex;
-                        gap: 304.3px;
-
-                        .icon-name {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            gap: 23.65px;
-
-                            .image {}
-
-                            .profile__image {}
-
-                            .name {
-                                white-space: nowrap;
-
-                                p:first-of-type {
-                                    @include text($Poppins, 28.01px, #141416) {
-                                        line-height: 140%;
-                                        font-weight: 500;
-                                    }
-                                }
-
-                                p:last-of-type {
-                                    @include text($Poppins, 22.76px, #64748B) {
-                                        line-height: 140%;
-                                        font-weight: 500;
-                                    }
-                                }
-                            }
-                        }
-
-                        .profile-other {
-                            display: flex;
-
-                            .profile__icon {
-                                width: 1.97rem;
-                                margin-right: 3.5px;
-                            }
-
-                            .volume {
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                margin-right: 80.83px;
-
-                                p {
-                                    @include text($Poppins, 24.51px, #141416) {
-                                        line-height: 140%;
-                                        font-weight: 600;
-                                    }
-                                }
-                            }
-
-                            .profit {
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                flex-wrap: nowrap;
-                                margin-right: 63.33px;
-
-                                p {
-                                    white-space: nowrap;
-
-                                    @include text($Poppins, 24.51px, $increasePrise) {
-                                        line-height: 130%;
-                                        letter-spacing: 1%;
-                                        font-weight: 500;
-                                    }
-                                }
-                            }
-
-                            .floor-price {
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                margin-right: 145.94px;
-
-                                p {
-                                    @include text($Poppins, 24.51px, #141416) {
-                                        line-height: 140%;
-                                        font-weight: 600;
-                                    }
-                                }
-                            }
-
-                            .owners {
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                margin-right: 140.23px;
-
-                                p {
-                                    @include text($Poppins, 23.65px, #010101) {
-                                        line-height: 130%;
-                                        letter-spacing: 1%;
-                                        font-weight: 500;
-                                    }
-                                }
-                            }
-
-                            .items {
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-
-                                p {
-                                    @include text($Poppins, 23.65px, #010101) {
-                                        line-height: 130%;
-                                        letter-spacing: 1%;
-                                        font-weight: 500;
-                                    }
-                                }
-                            }
-                        }
-
-
-
-                    }
-
-
-                }
-            }
-
-            .top-collection__explore {
+            .explore__explore {
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
                 gap: 17px;
                 cursor: pointer;
+                margin-bottom: 102.3px;
 
                 p {
                     @include text($Poppins, 17.67px, #ACADB9) {
@@ -767,200 +965,197 @@ nav {
                     }
                 }
             }
-
         }
     }
-}
 
-.explore {
-    .explore-container {
-        .title {}
+    .unleash-container {
+        padding: 75px 0 0 96px;
 
-        .explore-title {
-            margin-bottom: 65px;
+        &::before {
+            content: " ";
+            display: block;
+            width: 1248px;
+            height: 0.7px;
+            background-color: #cbcbcb;
         }
+    }
 
-        .filters {
-            display: flex;
-            justify-content: center;
-            gap: 22px;
+    .unleash {
 
-            .filter {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                cursor: pointer;
+        .unleash__container {
+            margin-bottom: 180.9px;
 
-                &:hover {
-                    opacity: 0.6;
-                }
+            .unleash-text {
+                margin: 116px 102px 0 0;
 
-                @include btn(2.2px solid #141416, transparent, 0) {
-                    border-radius: 13.3px;
-                }
+                .unleash-title {
+                    margin-bottom: 45px;
 
-                img {
-                    margin-right: 13.1px;
-                }
+                    h1 {
+                        @include text($Poppins, 45px, #18181b) {
+                            font-weight: 600;
+                            line-height: 1.21;
+                        }
 
-                p {
-                    @include text($Manrope, 15.47px, #1A202C) {
-                        line-height: 150%;
-                        letter-spacing: 0.22px;
-                        font-weight: 600;
-                    }
-                }
-            }
-
-            .filters-all {
-                padding: 14.5px 24.5px;
-
-            }
-
-            .filters-category {
-                padding: 0 16.1px;
-            }
-
-            .filters-collection {
-                padding: 0 16.43px;
-            }
-
-            .filters-price {
-                padding: 0 18px;
-            }
-        }
-
-        .filters-container {
-            margin-bottom: 100.28px;
-        }
-
-        .explore-grid {
-            @include grid(40px, 67.6px, 4, auto) {
-                justify-items: center;
-            }
-
-            margin-bottom: 103.2px;
-
-            .grid-elem {
-                width: 254.4px;
-                height: 368.9px;
-                position: relative;
-                text-align: center;
-                border-radius: 23.6px;
-                background-color: #fff;
-                padding: 14.1px 13.5px 20.6px 14.1px;
-
-
-                &:nth-child(-n + 3),
-                &:nth-child(n + 5) {
-                    box-shadow: 38.9px 11.8px 59px 0 rgba(199, 199, 199, 0.6);
-                }
-
-                &:nth-child(4),
-                &:nth-child(6) {
-                    box-shadow: 17.8px 11.8px 59px 0 rgba(199, 199, 199, 0.6);
-                }
-
-                .time {
-                    display: inline-block;
-                    position: absolute;
-                    top: 28.3px;
-                    left: 141.6px;
-                    z-index: 2;
-                    padding: 9.41px 14.12px;
-                    border-radius: 9.41px;
-                    border: 1.176px solid rgba(28, 29, 32, 0.08);
-                    background: rgba(28, 29, 32, 0.35);
-                    box-shadow: 0px 4.705px 14.115px 0px rgba(28, 29, 32, 0.08);
-                    backdrop-filter: blur(2.352520704269409px);
-
-                    @include text($Poppins, 14.2px, #fff) {
-                        font-weight: 500;
-                        line-height: 150%;
-                        letter-spacing: 0.118px;
+                        &:first-of-type {
+                            color: #c5c5c5;
+                        }
                     }
                 }
 
-                >img {
-                    margin-bottom: 18.82px;
-                }
-
-                h5 {
-                    margin-bottom: 14.12px;
-                    text-align: left;
-                    margin-bottom: 14.16px;
-
-                    @include text($Poppins, 21.173px, #141416) {
-                        font-weight: 600;
-                        line-height: 140%;
-                    }
-                }
-
-                .current-container {
+                .unleash-list {
                     display: flex;
-                    justify-content: space-between;
-                    align-content: center;
+                    flex-direction: column;
+                    gap: 12px;
+                    margin-bottom: 70px;
 
-                    .current-text {
-                        display: flex;
-                        flex-direction: column;
-                        gap: 4.71px;
+                    .list-item {
 
-                        >p {
-                            @include text($Poppins, 14.2px, #94A3B8) {
-                                line-height: 150%;
-                                letter-spacing: 0.118px;
+
+                        @include text($Poppins, 16px, #12141d) {
+                            line-height: 2;
+                        }
+
+                        &::before {
+                            content: url(images/list-icon.svg);
+                            padding-right: 12px;
+                            position: relative;
+                            top: 4px;
+                        }
+                    }
+                }
+
+                .unleash-btn {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 11.4px;
+
+                    @include btn(0px, #000, 18px 14.5px 18.9px 21px) {
+                        border-radius: 12px;
+                    }
+
+                    @include text($Poppins, 14.8px, #fff) {
+                        font-size: 14.8px;
+                        font-weight: 500;
+                        line-height: 1.25;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                        opacity: 0.93;
+                    }
+                }
+            }
+        }
+
+        .unleash-notifs {}
+    }
+
+    .nft-container {
+        margin-bottom: 160px;
+    }
+
+    .nft {
+        display: flex;
+        justify-content: center;
+
+        .nft__container {
+            height: 215px;
+            padding: 31px 31px 58px 66px;
+            display: flex;
+            gap: 18.93rem;
+            background-color: #141416;
+            border-radius: 30px;
+
+            .nft__text {
+
+
+                h1.nft__title {
+                    @include text($Poppins, 45px, #fff) {
+                        font-weight: 600;
+                        line-height: 1.3;
+                        letter-spacing: 0.45px;
+                        margin: 12px 0 12.5px 0;
+                    }
+                }
+
+                p.subtitle {
+                    @include text($Poppins, 20.3px, #d4d4d4) {
+                        opacity: 0.6;
+                        font-weight: 500;
+                        line-height: 1.3;
+                        letter-spacing: 0.2px;
+                    }
+                }
+
+                .btns {
+                    margin-top: 50.8px;
+
+                    .btn {
+                        display: inline-block;
+
+                        &:first-of-type {
+                            margin-right: 30.5px;
+
+                            @include btn(0px, #fff, 19.8px 25.9px) {
+                                border-radius: 12.2px;
+                            }
+
+                            @include text($Outfit, 14px, #141416) {
+                                font-weight: 600;
+                                line-height: 1.3;
+                                letter-spacing: 0.14px;
+                            }
+
+                            &:hover {
+                                cursor: pointer;
+
+                                @include btn(solid 2.3px #fff, transparent, 18.2px 24.3px) {
+                                    border-radius: 12.2px;
+                                    color: #fff;
+                                }
                             }
                         }
 
-                        .number {
-                            display: flex;
-                            gap: 2.35px;
+                        &:last-of-type {
+                            @include btn(solid 2.3px #fff, transparent, 18.2px 28.9px) {
+                                border-radius: 12.2px;
+                            }
 
-                            .number-text {
-                                @include text($Poppins, 16.468px, #141416) {
-                                    line-height: 150%;
+                            @include text($Outfit, 14px, #fff) {
+                                font-weight: 600;
+                                line-height: 1.3;
+                                letter-spacing: 0.14px;
+                            }
+
+                            &:hover {
+                                cursor: pointer;
+
+                                @include btn(0px, #fff, 19.8px 30.5px) {
+                                    border-radius: 12.2px;
+                                    color: #141416;
                                 }
                             }
                         }
                     }
-
-                    .current-btn {
-                        display: flex;
-                        align-items: center;
-
-                        @include btn(0px, #141416, 9.41px 18.82px) {
-                            border-radius: 11.763px;
-                        }
-
-                        @include text($Poppins, 14.115px, #fff) {
-                            font-weight: 700;
-                            line-height: 150%;
-                            letter-spacing: 0.118px;
-                        }
-
-                        &:hover {
-                            cursor: pointer;
-                            opacity: 0.93;
-                        }
-                    }
                 }
+
             }
-        }
 
-        .explore__explore {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            gap: 17px;
-            cursor: pointer;
-            margin-bottom: 102.3px;
+            .nft__imgs {
+                width: 380px;
 
-            p {
-                @include text($Poppins, 17.67px, #ACADB9) {
-                    line-height: 39.9%;
-                    letter-spacing: -0.09px;
-                    font-weight: 500;
+                .nft__img {
+                    position: relative;
+                    z-index: 2;
+                }
+
+                .nft__img_blur {
+                    position: relative;
+                    top: -237px;
+                    left: -12px;
+                    border-radius: 7.6px;
+                    filter: blur(33.9px);
                 }
             }
         }

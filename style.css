@@ -123,15 +123,15 @@ nav .navs li:last-of-type {
   color: #C2C3CB;
 }
 
-.hero-elem {
+.main .hero-elem {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.hero-elem .hero-elem__text-container {
+.main .hero-elem .hero-elem__text-container {
   margin: 0 130.6px 0 98px;
 }
-.hero-elem .hero-elem__text-container::before {
+.main .hero-elem .hero-elem__text-container::before {
   content: "";
   display: inline-block;
   background-color: #cdcdcd;
@@ -139,10 +139,10 @@ nav .navs li:last-of-type {
   height: 1px;
   margin-bottom: 10px;
 }
-.hero-elem .text-container .hero-elem__text {
+.main .hero-elem .text-container .hero-elem__text {
   margin-bottom: 2.81rem;
 }
-.hero-elem .text-container .hero-elem__text .hero-elem__title {
+.main .hero-elem .text-container .hero-elem__text .hero-elem__title {
   margin-bottom: 16px;
   font-family: "Poppins", sans-serif;
   font-size: 4.69rem;
@@ -151,20 +151,20 @@ nav .navs li:last-of-type {
   line-height: 120%;
   letter-spacing: -3px;
 }
-.hero-elem .text-container .hero-elem__text .hero-elem__subtitle {
+.main .hero-elem .text-container .hero-elem__text .hero-elem__subtitle {
   font-family: "Inter", sans-serif;
   font-size: 1.125rem;
   color: #676767;
   font-weight: 600;
   line-height: 156%;
 }
-.hero-elem .text-container .hero-elem__text .hero-elem__subtitle strong {
+.main .hero-elem .text-container .hero-elem__text .hero-elem__subtitle strong {
   color: #141416;
 }
-.hero-elem .text-container .hero-elem__btns {
+.main .hero-elem .text-container .hero-elem__btns {
   margin-bottom: 82px;
 }
-.hero-elem .text-container .hero-elem__btns .hero-elem__btn_black {
+.main .hero-elem .text-container .hero-elem__btns .hero-elem__btn_black {
   margin-right: 23px;
   border: 0px;
   background-color: #000;
@@ -177,11 +177,11 @@ nav .navs li:last-of-type {
   text-transform: uppercase;
   font-weight: 500;
 }
-.hero-elem .text-container .hero-elem__btns .hero-elem__btn_black:hover {
+.main .hero-elem .text-container .hero-elem__btns .hero-elem__btn_black:hover {
   cursor: pointer;
   opacity: 0.9;
 }
-.hero-elem .text-container .hero-elem__btns .hero-elem__btn_white {
+.main .hero-elem .text-container .hero-elem__btns .hero-elem__btn_white {
   border: 1.5px solid #000;
   background-color: transparent;
   padding: 18px 21px;
@@ -193,18 +193,18 @@ nav .navs li:last-of-type {
   text-transform: uppercase;
   font-weight: 500;
 }
-.hero-elem .text-container .hero-elem__btns .hero-elem__btn_white:hover {
+.main .hero-elem .text-container .hero-elem__btns .hero-elem__btn_white:hover {
   cursor: pointer;
 }
-.hero-elem .text-container .features {
+.main .hero-elem .text-container .features {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.hero-elem .text-container .features .features__textblock {
+.main .hero-elem .text-container .features .features__textblock {
   margin-right: 45.69px;
 }
-.hero-elem .text-container .features .features__textblock h1 {
+.main .hero-elem .text-container .features .features__textblock h1 {
   margin-bottom: 3.92px;
   font-family: "Public Sans", sans-serif;
   font-size: 36.77px;
@@ -212,7 +212,7 @@ nav .navs li:last-of-type {
   font-weight: 600;
   line-height: 125%;
 }
-.hero-elem .text-container .features .features__textblock p {
+.main .hero-elem .text-container .features .features__textblock p {
   margin-bottom: 165.08px;
   font-family: "Inter", sans-serif;
   font-size: 12.257px;
@@ -220,15 +220,15 @@ nav .navs li:last-of-type {
   font-weight: 500;
   line-height: 150%;
 }
-.hero-elem .hero-elem__img-container {
+.main .hero-elem .hero-elem__img-container {
   position: relative;
 }
-.hero-elem .hero-elem__img-container .img-1 {
+.main .hero-elem .hero-elem__img-container .img-1 {
   position: absolute;
   top: 7px;
   z-index: 2;
 }
-.hero-elem .hero-elem__img-container .img-1_blur {
+.main .hero-elem .hero-elem__img-container .img-1_blur {
   position: absolute;
   top: 30.91px;
   border-radius: 11.957px;
@@ -236,13 +236,13 @@ nav .navs li:last-of-type {
   -webkit-filter: blur(41.850151062px);
           filter: blur(41.850151062px);
 }
-.hero-elem .hero-elem__img-container .img-2 {
+.main .hero-elem .hero-elem__img-container .img-2 {
   position: absolute;
   top: 188px;
   left: 431px;
   z-index: 2;
 }
-.hero-elem .hero-elem__img-container .img-2_blur {
+.main .hero-elem .hero-elem__img-container .img-2_blur {
   position: absolute;
   top: 212.74px;
   left: 431px;
@@ -251,23 +251,22 @@ nav .navs li:last-of-type {
   -webkit-filter: blur(33.754776001px);
           filter: blur(33.754776001px);
 }
-.hero-elem .hero-elem__img-container .img-3 {
+.main .hero-elem .hero-elem__img-container .img-3 {
   position: absolute;
   top: 48px;
   left: 411px;
 }
-.hero-elem .hero-elem__img-container .img-4 {
+.main .hero-elem .hero-elem__img-container .img-4 {
   position: absolute;
   top: -12px;
   left: 607px;
 }
-
-.weekly {
+.main .weekly {
   background-color: #F1F1F1;
   padding: 70px 0 90px;
   position: relative;
 }
-.weekly .weekly-title {
+.main .weekly .weekly-title {
   font-family: "Poppins", sans-serif;
   font-size: 45px;
   color: #c5c5c5;
@@ -275,18 +274,18 @@ nav .navs li:last-of-type {
   line-height: 59.812%;
   text-align: center;
 }
-.weekly .slider-wrapper {
+.main .weekly .slider-wrapper {
   padding: 109.1px 0 114.72px 0;
 }
-.weekly .slider {
+.main .weekly .slider {
   overflow: hidden;
 }
-.weekly .slider .slider-line {
+.main .weekly .slider .slider-line {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.weekly .slider .slider-line .slider-elem-wrapper {
+.main .weekly .slider .slider-line .slider-elem-wrapper {
   margin-right: 39.84px;
   background-color: #fff;
   padding: 14.11px 14.11px 20.58px;
@@ -294,10 +293,10 @@ nav .navs li:last-of-type {
   -webkit-box-shadow: 38.817px 11.763px 58.813px 0px rgba(199, 199, 199, 0.6);
           box-shadow: 38.817px 11.763px 58.813px 0px rgba(199, 199, 199, 0.6);
 }
-.weekly .slider .slider-line .slider-elem-wrapper .slider-elem {
+.main .weekly .slider .slider-line .slider-elem-wrapper .slider-elem {
   position: relative;
 }
-.weekly .slider .slider-line .slider-elem-wrapper .slider-elem .time {
+.main .weekly .slider .slider-line .slider-elem-wrapper .slider-elem .time {
   display: inline-block;
   position: absolute;
   top: 13.23px;
@@ -318,10 +317,10 @@ nav .navs li:last-of-type {
   line-height: 150%;
   letter-spacing: 0.118px;
 }
-.weekly .slider .slider-line .slider-elem-wrapper .slider-elem > img {
+.main .weekly .slider .slider-line .slider-elem-wrapper .slider-elem > img {
   margin-bottom: 18.82px;
 }
-.weekly .slider .slider-line .slider-elem-wrapper .slider-elem h5 {
+.main .weekly .slider .slider-line .slider-elem-wrapper .slider-elem h5 {
   margin-bottom: 14.12px;
   font-family: "Poppins", sans-serif;
   font-size: 21.173px;
@@ -329,7 +328,7 @@ nav .navs li:last-of-type {
   font-weight: 600;
   line-height: 140%;
 }
-.weekly .slider .slider-line .slider-elem-wrapper .slider-elem .current-container {
+.main .weekly .slider .slider-line .slider-elem-wrapper .slider-elem .current-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -339,7 +338,7 @@ nav .navs li:last-of-type {
   -ms-flex-line-pack: center;
       align-content: center;
 }
-.weekly .slider .slider-line .slider-elem-wrapper .slider-elem .current-container .current-text {
+.main .weekly .slider .slider-line .slider-elem-wrapper .slider-elem .current-container .current-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -349,7 +348,7 @@ nav .navs li:last-of-type {
           flex-direction: column;
   gap: 4.71px;
 }
-.weekly .slider .slider-line .slider-elem-wrapper .slider-elem .current-container .current-text > p {
+.main .weekly .slider .slider-line .slider-elem-wrapper .slider-elem .current-container .current-text > p {
   font-family: "Poppins", sans-serif;
   font-size: 14.115px;
   color: #94A3B8;
@@ -357,20 +356,20 @@ nav .navs li:last-of-type {
   line-height: 150%;
   letter-spacing: 0.118px;
 }
-.weekly .slider .slider-line .slider-elem-wrapper .slider-elem .current-container .current-text .number {
+.main .weekly .slider .slider-line .slider-elem-wrapper .slider-elem .current-container .current-text .number {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 2.35px;
 }
-.weekly .slider .slider-line .slider-elem-wrapper .slider-elem .current-container .current-text .number .number-text {
+.main .weekly .slider .slider-line .slider-elem-wrapper .slider-elem .current-container .current-text .number .number-text {
   font-family: "Poppins", sans-serif;
   font-size: 16.468px;
   color: #141416;
   font-weight: 400;
   line-height: 150%;
 }
-.weekly .slider .slider-line .slider-elem-wrapper .slider-elem .current-container .current-btn {
+.main .weekly .slider .slider-line .slider-elem-wrapper .slider-elem .current-container .current-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -388,11 +387,11 @@ nav .navs li:last-of-type {
   line-height: 150%;
   letter-spacing: 0.118px;
 }
-.weekly .slider .slider-line .slider-elem-wrapper .slider-elem .current-container .current-btn:hover {
+.main .weekly .slider .slider-line .slider-elem-wrapper .slider-elem .current-container .current-btn:hover {
   cursor: pointer;
   opacity: 0.93;
 }
-.weekly .navigation {
+.main .weekly .navigation {
   width: 122.8px;
   height: 25.8px;
   margin: 0 auto;
@@ -411,27 +410,26 @@ nav .navs li:last-of-type {
           box-shadow: 0 43.1px 34.5px -25.9px rgba(15, 15, 15, 0.12);
   background-color: #fcfcfd;
 }
-.weekly .navigation .navigation__arrows {
+.main .weekly .navigation .navigation__arrows {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 34.5px;
 }
-.weekly .navigation .navigation__arrows .arrow-left {
+.main .weekly .navigation .navigation__arrows .arrow-left {
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
   cursor: pointer;
 }
-.weekly .navigation .navigation__arrows .row {
+.main .weekly .navigation .navigation__arrows .row {
   width: 2.2px;
   border-radius: 2.2px;
   background-color: #e6e8ec;
 }
-.weekly .navigation .navigation__arrows .arrow-right {
+.main .weekly .navigation .navigation__arrows .arrow-right {
   cursor: pointer;
 }
-
-.recently-viewed {
+.main .recently-viewed {
   width: 365px;
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
@@ -446,7 +444,7 @@ nav .navs li:last-of-type {
   left: 976px;
   top: 1642px;
 }
-.recently-viewed .recently-viewed__header {
+.main .recently-viewed .recently-viewed__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -455,7 +453,7 @@ nav .navs li:last-of-type {
           justify-content: space-between;
   margin-bottom: 27.6px;
 }
-.recently-viewed .recently-viewed__header h3 {
+.main .recently-viewed .recently-viewed__header h3 {
   font-family: "Poppins", sans-serif;
   font-size: 21px;
   color: #1a202c;
@@ -463,10 +461,10 @@ nav .navs li:last-of-type {
   line-height: 1.35;
   letter-spacing: 0.2px;
 }
-.recently-viewed .recently-viewed__header img {
+.main .recently-viewed .recently-viewed__header img {
   cursor: pointer;
 }
-.recently-viewed .recently-viewed__items-wrapper {
+.main .recently-viewed .recently-viewed__items-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -476,40 +474,40 @@ nav .navs li:last-of-type {
           flex-direction: column;
   gap: 20px;
 }
-.recently-viewed .recently-viewed__items-wrapper .recently-viewed__item {
+.main .recently-viewed .recently-viewed__items-wrapper .recently-viewed__item {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto 1fr auto;
   grid-template-columns: auto 1fr auto;
 }
-.recently-viewed .recently-viewed__items-wrapper .recently-viewed__item img.recently-viewed__icon {
+.main .recently-viewed .recently-viewed__items-wrapper .recently-viewed__item img.recently-viewed__icon {
   margin-right: 15.4px;
 }
-.recently-viewed .recently-viewed__items-wrapper .recently-viewed__item .recently-viewed__text {
+.main .recently-viewed .recently-viewed__items-wrapper .recently-viewed__item .recently-viewed__text {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
-.recently-viewed .recently-viewed__items-wrapper .recently-viewed__item .recently-viewed__text > :first-child {
+.main .recently-viewed .recently-viewed__items-wrapper .recently-viewed__item .recently-viewed__text > :first-child {
   font-family: "Poppins", sans-serif;
   font-size: 15.4px;
   color: #141416;
   font-weight: 500;
   line-height: 1.4;
 }
-.recently-viewed .recently-viewed__items-wrapper .recently-viewed__item .recently-viewed__text > :last-child {
+.main .recently-viewed .recently-viewed__items-wrapper .recently-viewed__item .recently-viewed__text > :last-child {
   font-family: "Poppins", sans-serif;
   font-size: 12.5px;
   color: #64748b;
   line-height: 1.5;
 }
-.recently-viewed .recently-viewed__items-wrapper .recently-viewed__item .recently-viewed__numbers {
+.main .recently-viewed .recently-viewed__items-wrapper .recently-viewed__item .recently-viewed__numbers {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   text-align: right;
 }
-.recently-viewed .recently-viewed__items-wrapper .recently-viewed__item .recently-viewed__numbers > :first-child {
+.main .recently-viewed .recently-viewed__items-wrapper .recently-viewed__item .recently-viewed__numbers > :first-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -520,19 +518,19 @@ nav .navs li:last-of-type {
   font-weight: 600;
   line-height: 1.4;
 }
-.recently-viewed .recently-viewed__items-wrapper .recently-viewed__item .recently-viewed__numbers > :last-child {
+.main .recently-viewed .recently-viewed__items-wrapper .recently-viewed__item .recently-viewed__numbers > :last-child {
   font-family: "Poppins", sans-serif;
   font-size: 13.4px;
   color: #10C352;
   line-height: 1.5;
 }
-.recently-viewed .recently-viewed__items-wrapper .recently-viewed__item .recently-viewed__numbers_red {
+.main .recently-viewed .recently-viewed__items-wrapper .recently-viewed__item .recently-viewed__numbers_red {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   text-align: right;
 }
-.recently-viewed .recently-viewed__items-wrapper .recently-viewed__item .recently-viewed__numbers_red > :first-child {
+.main .recently-viewed .recently-viewed__items-wrapper .recently-viewed__item .recently-viewed__numbers_red > :first-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -543,21 +541,20 @@ nav .navs li:last-of-type {
   font-weight: 600;
   line-height: 1.4;
 }
-.recently-viewed .recently-viewed__items-wrapper .recently-viewed__item .recently-viewed__numbers_red > :last-child {
+.main .recently-viewed .recently-viewed__items-wrapper .recently-viewed__item .recently-viewed__numbers_red > :last-child {
   font-family: "Poppins", sans-serif;
   font-size: 13.4px;
   color: #E23333;
   line-height: 1.5;
 }
-
-.top-collection {
+.main .top-collection {
   padding: 120.41px 95px 0 98px;
   margin-bottom: 100px;
 }
-.top-collection .top-collection__container .top-collection__title {
+.main .top-collection .top-collection__container .top-collection__title {
   margin-bottom: 90.59px;
 }
-.top-collection .top-collection__container .top-collection__collection-container .top-collection__subtitles {
+.main .top-collection .top-collection__container .top-collection__collection-container .top-collection__subtitles {
   font-family: "Poppins", sans-serif;
   font-size: 22px;
   color: #93989A;
@@ -572,13 +569,13 @@ nav .navs li:last-of-type {
           justify-content: space-between;
   margin-bottom: 48px;
 }
-.top-collection .top-collection__container .top-collection__collection-container .top-collection__subtitles .other {
+.main .top-collection .top-collection__container .top-collection__collection-container .top-collection__subtitles .other {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 92.52px;
 }
-.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container {
+.main .top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -588,20 +585,20 @@ nav .navs li:last-of-type {
           flex-direction: column;
   gap: 39.99px;
 }
-.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user {
+.main .top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user {
   padding-bottom: 26px;
   border-bottom: 1.69px solid #EBE9E9;
 }
-.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user:last-of-type {
+.main .top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user:last-of-type {
   margin-bottom: 84.99px;
 }
-.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile {
+.main .top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 304.3px;
 }
-.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .icon-name {
+.main .top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .icon-name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -613,33 +610,33 @@ nav .navs li:last-of-type {
           align-items: center;
   gap: 23.65px;
 }
-.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .icon-name .name {
+.main .top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .icon-name .name {
   white-space: nowrap;
 }
-.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .icon-name .name p:first-of-type {
+.main .top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .icon-name .name p:first-of-type {
   font-family: "Poppins", sans-serif;
   font-size: 28.01px;
   color: #141416;
   line-height: 140%;
   font-weight: 500;
 }
-.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .icon-name .name p:last-of-type {
+.main .top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .icon-name .name p:last-of-type {
   font-family: "Poppins", sans-serif;
   font-size: 22.76px;
   color: #64748B;
   line-height: 140%;
   font-weight: 500;
 }
-.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other {
+.main .top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other .profile__icon {
+.main .top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other .profile__icon {
   width: 1.97rem;
   margin-right: 3.5px;
 }
-.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other .volume {
+.main .top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other .volume {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -651,14 +648,14 @@ nav .navs li:last-of-type {
           align-items: center;
   margin-right: 80.83px;
 }
-.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other .volume p {
+.main .top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other .volume p {
   font-family: "Poppins", sans-serif;
   font-size: 24.51px;
   color: #141416;
   line-height: 140%;
   font-weight: 600;
 }
-.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other .profit {
+.main .top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other .profit {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -672,7 +669,7 @@ nav .navs li:last-of-type {
       flex-wrap: nowrap;
   margin-right: 63.33px;
 }
-.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other .profit p {
+.main .top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other .profit p {
   white-space: nowrap;
   font-family: "Poppins", sans-serif;
   font-size: 24.51px;
@@ -681,7 +678,7 @@ nav .navs li:last-of-type {
   letter-spacing: 1%;
   font-weight: 500;
 }
-.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other .floor-price {
+.main .top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other .floor-price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -693,14 +690,14 @@ nav .navs li:last-of-type {
           align-items: center;
   margin-right: 145.94px;
 }
-.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other .floor-price p {
+.main .top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other .floor-price p {
   font-family: "Poppins", sans-serif;
   font-size: 24.51px;
   color: #141416;
   line-height: 140%;
   font-weight: 600;
 }
-.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other .owners {
+.main .top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other .owners {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -712,7 +709,7 @@ nav .navs li:last-of-type {
           align-items: center;
   margin-right: 140.23px;
 }
-.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other .owners p {
+.main .top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other .owners p {
   font-family: "Poppins", sans-serif;
   font-size: 23.65px;
   color: #010101;
@@ -720,7 +717,7 @@ nav .navs li:last-of-type {
   letter-spacing: 1%;
   font-weight: 500;
 }
-.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other .items {
+.main .top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other .items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -731,7 +728,7 @@ nav .navs li:last-of-type {
       -ms-flex-align: center;
           align-items: center;
 }
-.top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other .items p {
+.main .top-collection .top-collection__container .top-collection__collection-container .top-collection__users-container .top-collection__user .profile .profile-other .items p {
   font-family: "Poppins", sans-serif;
   font-size: 23.65px;
   color: #010101;
@@ -739,7 +736,7 @@ nav .navs li:last-of-type {
   letter-spacing: 1%;
   font-weight: 500;
 }
-.top-collection .top-collection__container .top-collection__collection-container .top-collection__explore {
+.main .top-collection .top-collection__container .top-collection__collection-container .top-collection__explore {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -752,7 +749,7 @@ nav .navs li:last-of-type {
   gap: 17px;
   cursor: pointer;
 }
-.top-collection .top-collection__container .top-collection__collection-container .top-collection__explore p {
+.main .top-collection .top-collection__container .top-collection__collection-container .top-collection__explore p {
   font-family: "Poppins", sans-serif;
   font-size: 17.67px;
   color: #ACADB9;
@@ -760,11 +757,13 @@ nav .navs li:last-of-type {
   letter-spacing: -0.09px;
   font-weight: 500;
 }
-
-.explore .explore-container .explore-title {
+.main .explore .explore-container {
+  padding: 0 96px;
+}
+.main .explore .explore-container .explore-title {
   margin-bottom: 65px;
 }
-.explore .explore-container .filters {
+.main .explore .explore-container .filters {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -773,7 +772,7 @@ nav .navs li:last-of-type {
           justify-content: center;
   gap: 22px;
 }
-.explore .explore-container .filters .filter {
+.main .explore .explore-container .filters .filter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -789,13 +788,13 @@ nav .navs li:last-of-type {
   padding: 0;
   border-radius: 13.3px;
 }
-.explore .explore-container .filters .filter:hover {
+.main .explore .explore-container .filters .filter:hover {
   opacity: 0.6;
 }
-.explore .explore-container .filters .filter img {
+.main .explore .explore-container .filters .filter img {
   margin-right: 13.1px;
 }
-.explore .explore-container .filters .filter p {
+.main .explore .explore-container .filters .filter p {
   font-family: "Manrope", sans-serif;
   font-size: 15.47px;
   color: #1A202C;
@@ -803,22 +802,22 @@ nav .navs li:last-of-type {
   letter-spacing: 0.22px;
   font-weight: 600;
 }
-.explore .explore-container .filters .filters-all {
+.main .explore .explore-container .filters .filters-all {
   padding: 14.5px 24.5px;
 }
-.explore .explore-container .filters .filters-category {
+.main .explore .explore-container .filters .filters-category {
   padding: 0 16.1px;
 }
-.explore .explore-container .filters .filters-collection {
+.main .explore .explore-container .filters .filters-collection {
   padding: 0 16.43px;
 }
-.explore .explore-container .filters .filters-price {
+.main .explore .explore-container .filters .filters-price {
   padding: 0 18px;
 }
-.explore .explore-container .filters-container {
+.main .explore .explore-container .filters-container {
   margin-bottom: 100.28px;
 }
-.explore .explore-container .explore-grid {
+.main .explore .explore-container .explore-grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto 40px auto 40px auto 40px auto;
@@ -830,7 +829,7 @@ nav .navs li:last-of-type {
   justify-items: center;
   margin-bottom: 103.2px;
 }
-.explore .explore-container .explore-grid .grid-elem {
+.main .explore .explore-container .explore-grid .grid-elem {
   width: 254.4px;
   height: 368.9px;
   position: relative;
@@ -839,15 +838,15 @@ nav .navs li:last-of-type {
   background-color: #fff;
   padding: 14.1px 13.5px 20.6px 14.1px;
 }
-.explore .explore-container .explore-grid .grid-elem:nth-child(-n+3), .explore .explore-container .explore-grid .grid-elem:nth-child(n+5) {
+.main .explore .explore-container .explore-grid .grid-elem:nth-child(-n+3), .main .explore .explore-container .explore-grid .grid-elem:nth-child(n+5) {
   -webkit-box-shadow: 38.9px 11.8px 59px 0 rgba(199, 199, 199, 0.6);
           box-shadow: 38.9px 11.8px 59px 0 rgba(199, 199, 199, 0.6);
 }
-.explore .explore-container .explore-grid .grid-elem:nth-child(4), .explore .explore-container .explore-grid .grid-elem:nth-child(6) {
+.main .explore .explore-container .explore-grid .grid-elem:nth-child(4), .main .explore .explore-container .explore-grid .grid-elem:nth-child(6) {
   -webkit-box-shadow: 17.8px 11.8px 59px 0 rgba(199, 199, 199, 0.6);
           box-shadow: 17.8px 11.8px 59px 0 rgba(199, 199, 199, 0.6);
 }
-.explore .explore-container .explore-grid .grid-elem .time {
+.main .explore .explore-container .explore-grid .grid-elem .time {
   display: inline-block;
   position: absolute;
   top: 28.3px;
@@ -868,10 +867,10 @@ nav .navs li:last-of-type {
   line-height: 150%;
   letter-spacing: 0.118px;
 }
-.explore .explore-container .explore-grid .grid-elem > img {
+.main .explore .explore-container .explore-grid .grid-elem > img {
   margin-bottom: 18.82px;
 }
-.explore .explore-container .explore-grid .grid-elem h5 {
+.main .explore .explore-container .explore-grid .grid-elem h5 {
   margin-bottom: 14.12px;
   text-align: left;
   margin-bottom: 14.16px;
@@ -881,7 +880,7 @@ nav .navs li:last-of-type {
   font-weight: 600;
   line-height: 140%;
 }
-.explore .explore-container .explore-grid .grid-elem .current-container {
+.main .explore .explore-container .explore-grid .grid-elem .current-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -891,7 +890,7 @@ nav .navs li:last-of-type {
   -ms-flex-line-pack: center;
       align-content: center;
 }
-.explore .explore-container .explore-grid .grid-elem .current-container .current-text {
+.main .explore .explore-container .explore-grid .grid-elem .current-container .current-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -901,26 +900,26 @@ nav .navs li:last-of-type {
           flex-direction: column;
   gap: 4.71px;
 }
-.explore .explore-container .explore-grid .grid-elem .current-container .current-text > p {
+.main .explore .explore-container .explore-grid .grid-elem .current-container .current-text > p {
   font-family: "Poppins", sans-serif;
   font-size: 14.2px;
   color: #94A3B8;
   line-height: 150%;
   letter-spacing: 0.118px;
 }
-.explore .explore-container .explore-grid .grid-elem .current-container .current-text .number {
+.main .explore .explore-container .explore-grid .grid-elem .current-container .current-text .number {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 2.35px;
 }
-.explore .explore-container .explore-grid .grid-elem .current-container .current-text .number .number-text {
+.main .explore .explore-container .explore-grid .grid-elem .current-container .current-text .number .number-text {
   font-family: "Poppins", sans-serif;
   font-size: 16.468px;
   color: #141416;
   line-height: 150%;
 }
-.explore .explore-container .explore-grid .grid-elem .current-container .current-btn {
+.main .explore .explore-container .explore-grid .grid-elem .current-container .current-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -938,11 +937,11 @@ nav .navs li:last-of-type {
   line-height: 150%;
   letter-spacing: 0.118px;
 }
-.explore .explore-container .explore-grid .grid-elem .current-container .current-btn:hover {
+.main .explore .explore-container .explore-grid .grid-elem .current-container .current-btn:hover {
   cursor: pointer;
   opacity: 0.93;
 }
-.explore .explore-container .explore__explore {
+.main .explore .explore-container .explore__explore {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -956,13 +955,189 @@ nav .navs li:last-of-type {
   cursor: pointer;
   margin-bottom: 102.3px;
 }
-.explore .explore-container .explore__explore p {
+.main .explore .explore-container .explore__explore p {
   font-family: "Poppins", sans-serif;
   font-size: 17.67px;
   color: #ACADB9;
   line-height: 39.9%;
   letter-spacing: -0.09px;
   font-weight: 500;
+}
+.main .unleash-container {
+  padding: 75px 0 0 96px;
+}
+.main .unleash-container::before {
+  content: " ";
+  display: block;
+  width: 1248px;
+  height: 0.7px;
+  background-color: #cbcbcb;
+}
+.main .unleash .unleash__container {
+  margin-bottom: 180.9px;
+}
+.main .unleash .unleash__container .unleash-text {
+  margin: 116px 102px 0 0;
+}
+.main .unleash .unleash__container .unleash-text .unleash-title {
+  margin-bottom: 45px;
+}
+.main .unleash .unleash__container .unleash-text .unleash-title h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 45px;
+  color: #18181b;
+  font-weight: 600;
+  line-height: 1.21;
+}
+.main .unleash .unleash__container .unleash-text .unleash-title h1:first-of-type {
+  color: #c5c5c5;
+}
+.main .unleash .unleash__container .unleash-text .unleash-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+  margin-bottom: 70px;
+}
+.main .unleash .unleash__container .unleash-text .unleash-list .list-item {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #12141d;
+  line-height: 2;
+}
+.main .unleash .unleash__container .unleash-text .unleash-list .list-item::before {
+  content: url(images/list-icon.svg);
+  padding-right: 12px;
+  position: relative;
+  top: 4px;
+}
+.main .unleash .unleash__container .unleash-text .unleash-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 11.4px;
+  border: 0px;
+  background-color: #000;
+  padding: 18px 14.5px 18.9px 21px;
+  border-radius: 12px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14.8px;
+  color: #fff;
+  font-size: 14.8px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+.main .unleash .unleash__container .unleash-text .unleash-btn:hover {
+  cursor: pointer;
+  opacity: 0.93;
+}
+.main .nft-container {
+  margin-bottom: 160px;
+}
+.main .nft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main .nft .nft__container {
+  height: 215px;
+  padding: 31px 31px 58px 66px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 18.93rem;
+  background-color: #141416;
+  border-radius: 30px;
+}
+.main .nft .nft__container .nft__text h1.nft__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 45px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 0.45px;
+  margin: 12px 0 12.5px 0;
+}
+.main .nft .nft__container .nft__text p.subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 20.3px;
+  color: #d4d4d4;
+  opacity: 0.6;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: 0.2px;
+}
+.main .nft .nft__container .nft__text .btns {
+  margin-top: 50.8px;
+}
+.main .nft .nft__container .nft__text .btns .btn {
+  display: inline-block;
+}
+.main .nft .nft__container .nft__text .btns .btn:first-of-type {
+  margin-right: 30.5px;
+  border: 0px;
+  background-color: #fff;
+  padding: 19.8px 25.9px;
+  border-radius: 12.2px;
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  color: #141416;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 0.14px;
+}
+.main .nft .nft__container .nft__text .btns .btn:first-of-type:hover {
+  cursor: pointer;
+  border: solid 2.3px #fff;
+  background-color: transparent;
+  padding: 18.2px 24.3px;
+  border-radius: 12.2px;
+  color: #fff;
+}
+.main .nft .nft__container .nft__text .btns .btn:last-of-type {
+  border: solid 2.3px #fff;
+  background-color: transparent;
+  padding: 18.2px 28.9px;
+  border-radius: 12.2px;
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 0.14px;
+}
+.main .nft .nft__container .nft__text .btns .btn:last-of-type:hover {
+  cursor: pointer;
+  border: 0px;
+  background-color: #fff;
+  padding: 19.8px 30.5px;
+  border-radius: 12.2px;
+  color: #141416;
+}
+.main .nft .nft__container .nft__imgs {
+  width: 380px;
+}
+.main .nft .nft__container .nft__imgs .nft__img {
+  position: relative;
+  z-index: 2;
+}
+.main .nft .nft__container .nft__imgs .nft__img_blur {
+  position: relative;
+  top: -237px;
+  left: -12px;
+  border-radius: 7.6px;
+  -webkit-filter: blur(33.9px);
+          filter: blur(33.9px);
 }
 
 footer {
